@@ -1,0 +1,21 @@
+name: calander
+base: core18
+version: '0.3.1'
+summary: Calander for terminal
+description: |
+  View colorful calander from the terminal.
+
+grade: stable
+confinement: strict
+contact: magicisyou@outlook.com
+license: MIT
+source-code: https://github.com/silentdusk/calander-cli
+
+parts:
+  calander:
+    plugin: rust
+    source: https://github.com/silentdusk/calander-cli.git
+
+apps:
+  calander:
+    command: bin/calander
